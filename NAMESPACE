@@ -1,0 +1,5 @@
+useDynLib("Iboot", "bstr_iboot_stop")
+importFrom(utils, head, tail, packageDescription)
+export("Iboot")
+S3method(print, Iboot)
+S3method(summary, Iboot)

@@ -1,0 +1,20 @@
+citHeader("To cite the Iboot package in publications use:")
+
+if(!exists("meta") || is.null(meta)) meta <- packageDescription("Iboot")
+
+citEntry(entry="manual",
+	title = paste("{R} package \\texttt{Iboot}: ",
+	" iterated bootstrap tests and confidence sets. (version ", meta$Version, ")", sep=""),
+	author = personList( as.person("N. Lunardon")),
+	address = c("Universit\\`a di Trieste, Italia"),
+	year = substr(meta$Date, 1, 4),
+	url = "http://cran.r-project.org/web/packages/Iboot/index.html",
+	textVersion = 
+	paste("Lunardon, N. (", substr(meta$Date, 1, 4), "). ",
+"R package 'Iboot': iterated bootstrap tests and confidence sets", " (version ", meta$Version, "). ",
+"URL http://cran.r-project.org/web/packages/Iboot/index.html",
+sep="")
+)
+
+
+ 
